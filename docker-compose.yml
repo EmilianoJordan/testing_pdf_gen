@@ -1,0 +1,12 @@
+services:
+  bash:
+    image: test-pdf-generation:latest
+    entrypoint: /bin/bash
+    working_dir: /project
+    volumes:
+      - .:/project
+  pycharm:
+    image: test-pdf-generation:latest
+    working_dir: /project
+    entrypoint: [ ]
+    command: [ ]
